@@ -5,7 +5,7 @@ import SignUp from './pages/SignUp';
 import SignIn from './pages/SignIn';
 import Home from './pages/Home';
 import pnF from './pages/pnF';
-
+import GameInfo from './pages/gameInfo';
 
 //react-router
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
@@ -24,7 +24,7 @@ import { GameContext } from './context/gameContext';
 import reducer from './context/reducer';
 import { SET_SINGLE_GAME, SET_GAME, SET_LOADING, GAME_UPDATE } from './context/action.types';
 import { Container } from 'reactstrap';
-import gameInfo from './pages/gameInfo';
+
 
 const initialState = {
   games: [],
@@ -74,11 +74,11 @@ const App = () => {
       <NavBar/>
       <Container>
       <Switch>
-        <Route exact path = "/" component={Home}/>
-        <Route exact path = "/signup" component={SignUp}/>
-        <Route exact path = "/signin" component={SignIn}/>
-        <Route exact path = "/dashboard" component={dashboard}/>
-        <Route exact path = "/gameInfo" component={gameInfo}/>
+        <Route exact path = "/game-story" component={Home}/>
+        <Route exact path = "/game-story/signup" component={SignUp}/>
+        <Route exact path = "/game-story/signin" component={SignIn}/>
+        <Route exact path = "/game-story/dashboard" component={dashboard}/>
+        <Route exact path = "/game-story/gameInfo" component={GameInfo}/>
         <Route exact path = "*" component={pnF}/>
       </Switch>
       </Container>

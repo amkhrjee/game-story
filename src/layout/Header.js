@@ -19,7 +19,7 @@ const NavBar = () => {
     return(
         <div className="navbar">
             <div className="logo">
-               <NavLink className="text-white" tag={Link} to="/">gamestory.com</NavLink> 
+               <NavLink className="text-white" tag={Link} to="/game-story">gamestory.com</NavLink> 
             </div>
 
             <div className="userReg">
@@ -32,10 +32,10 @@ const NavBar = () => {
                     : (
                         <>
                             <div  className="su">
-                                <NavLink tag={Link} to="/signup">Sign Up</NavLink>
+                                <NavLink tag={Link} to="/game-story/signup">Sign Up</NavLink>
                             </div>
                             <div  className="si">
-                                <NavLink tag={Link} to="/signin">Sign In</NavLink>
+                                <NavLink tag={Link} to="/game-story/signin">Sign In</NavLink>
                             </div>
                         </>
                     )
@@ -64,7 +64,7 @@ const NavBar = () => {
                             
                             <div className="row down-content">
                                 <div className="dummy mt-0 mb-0">
-                                    <p className="down-item">Dashboard</p>
+                                    <NavLink tag={Link} to="/game-story/dashboard" className="down-item">Dashboard</NavLink>
                                 </div>
                                 <div className="dummy mt-0 mb-0">
                                     <p className="down-item">Profile</p>

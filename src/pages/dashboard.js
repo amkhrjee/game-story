@@ -34,6 +34,7 @@ const dashboard = () => {
     useEffect(() => {
         if (gameToUpdate) {
           setTitle(gameToUpdate.title);
+          setAvailable(gameToUpdate.available);
           setRelease(gameToUpdate.releasedate);
           setGenre(gameToUpdate.genre);
           setDeveloper(gameToUpdate.developer);
@@ -130,7 +131,7 @@ const dashboard = () => {
         payload: null,
         key: null
         })
-        history.push("/");
+        history.push("/game-story");
         }
     return(
         <>

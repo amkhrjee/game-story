@@ -301,3 +301,67 @@ body{
   font-size: larger;
   color: #ffffff;
 }
+.title-text{
+  font-family: 'Inter', 'Segoe UI';
+  font-weight: 900 ;
+  font-size: larger;
+  color: #ffffff;
+}
+.latest-game-text{
+  font-family: 'Inter', 'Segoe UI';
+  font-weight: 900 ;
+  font-size: larger;
+  color: #ffffff;
+}
+.right-arrow{
+  height: 1em;
+  transform: rotate(270deg);
+}
+.horizontal-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #121212;
+}
+
+li {
+  float: left;
+  padding-right: 2em;
+  padding-bottom: 2em;
+}
+
+li a {
+  display: block;
+  text-align: center;
+  padding: 16em;
+  text-decoration: none;
+}
+.game-card-image{
+  max-width: 16em;
+  max-height: 16em;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.latest-game{
+  display: inline;
+}
+.latest-game-text{
+  display: inline-block;
+}
+.right-arrow{
+  display: inline-block;
+  margin-left: 0.5%;
+  margin-bottom: 0.5%;
+  max-height: 1em;
+}
+
+.story-text{
+  font-family: 'Inter', 'Segoe UI';
+  font-weight: 400  ;
+  
+  color: #ffffff;
+}
+.down-item{
+  color: #ffffff;
+}
