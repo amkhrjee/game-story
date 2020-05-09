@@ -74,7 +74,7 @@ const App = () => {
       <NavBar/>
       <Container>
       <Switch>
-        <Route exact path = "/" component={Home}/>
+        <Route exact path = "/game-story" component={Home}/>
         <Route exact path = "/game-story/signup" component={SignUp}/>
         <Route exact path = "/game-story/signin" component={SignIn}/>
         <Route exact path = "/game-story/dashboard" component={dashboard}/>
