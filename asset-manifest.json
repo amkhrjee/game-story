@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/game-story/static/css/main.02ebc1aa.chunk.css",
-    "main.js": "/game-story/static/js/main.5e1c39db.chunk.js",
-    "main.js.map": "/game-story/static/js/main.5e1c39db.chunk.js.map",
+    "main.css": "/game-story/static/css/main.db237949.chunk.css",
+    "main.js": "/game-story/static/js/main.b747f113.chunk.js",
+    "main.js.map": "/game-story/static/js/main.b747f113.chunk.js.map",
     "runtime-main.js": "/game-story/static/js/runtime-main.c7182350.js",
     "runtime-main.js.map": "/game-story/static/js/runtime-main.c7182350.js.map",
     "static/css/2.69121389.chunk.css": "/game-story/static/css/2.69121389.chunk.css",
-    "static/js/2.c25b57a6.chunk.js": "/game-story/static/js/2.c25b57a6.chunk.js",
-    "static/js/2.c25b57a6.chunk.js.map": "/game-story/static/js/2.c25b57a6.chunk.js.map",
+    "static/js/2.7b36b2e5.chunk.js": "/game-story/static/js/2.7b36b2e5.chunk.js",
+    "static/js/2.7b36b2e5.chunk.js.map": "/game-story/static/js/2.7b36b2e5.chunk.js.map",
     "index.html": "/game-story/index.html",
-    "precache-manifest.c60be3dd852415101e291aaec9901323.js": "/game-story/precache-manifest.c60be3dd852415101e291aaec9901323.js",
+    "precache-manifest.40e0eaf6badb93c9a743af21819110c5.js": "/game-story/precache-manifest.40e0eaf6badb93c9a743af21819110c5.js",
     "service-worker.js": "/game-story/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/game-story/static/css/2.69121389.chunk.css.map",
-    "static/css/main.02ebc1aa.chunk.css.map": "/game-story/static/css/main.02ebc1aa.chunk.css.map",
-    "static/js/2.c25b57a6.chunk.js.LICENSE.txt": "/game-story/static/js/2.c25b57a6.chunk.js.LICENSE.txt",
+    "static/css/main.db237949.chunk.css.map": "/game-story/static/css/main.db237949.chunk.css.map",
+    "static/js/2.7b36b2e5.chunk.js.LICENSE.txt": "/game-story/static/js/2.7b36b2e5.chunk.js.LICENSE.txt",
     "static/media/brands-and-logotypes.svg": "/game-story/static/media/brands-and-logotypes.cdb413ff.svg",
     "static/media/down-arrow.svg": "/game-story/static/media/down-arrow.c3fc7584.svg",
     "static/media/symbol.svg": "/game-story/static/media/symbol.e02c1a30.svg",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.c7182350.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.c25b57a6.chunk.js",
-    "static/css/main.02ebc1aa.chunk.css",
-    "static/js/main.5e1c39db.chunk.js"
+    "static/js/2.7b36b2e5.chunk.js",
+    "static/css/main.db237949.chunk.css",
+    "static/js/main.b747f113.chunk.js"
   ]
 }
