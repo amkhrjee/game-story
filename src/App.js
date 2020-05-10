@@ -78,7 +78,7 @@ const App = () => {
         <Route exact path = "/game-story/signup" component={SignUp}/>
         <Route exact path = "/game-story/signin" component={SignIn}/>
         <Route exact path = "/game-story/dashboard" component={dashboard}/>
-        <Route exact path = "/gameInfo" component={GameInfo}/>
+        <Route exact path = "/game-story/gameInfo" component={GameInfo}/>
         <Route exact path = "*" component={pnF}/>
       </Switch>
       </Container>

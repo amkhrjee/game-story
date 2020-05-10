@@ -17,7 +17,7 @@ export const GameCardComp = ({game, gameKey}) => {
         })
 
         
-        history.push("/gameInfo");
+        history.push("/game-story/gameInfo");
     }
     return(
         <div className="game-card">
