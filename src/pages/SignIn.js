@@ -37,7 +37,7 @@ const SignIn = () => {
     }
 
     if(context.user?.uid) {
-        return <Redirect to="/"/>
+        return <Redirect to="/game-story"/>
     }
     return(
         <>

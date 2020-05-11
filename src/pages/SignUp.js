@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from '../layout/Header';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
@@ -17,15 +17,22 @@ import fbImage from '../assets/brands-and-logotypes.svg';
 const SignUp = () => {
 
     const context = useContext(UserContext);
+    const {state, dispatch} = useContext(UserContext);
+    //const {userToUpdate, userToUpdateKey} = state;
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [imageUrl, setImageUrl] = useState(null)
+    const [uploading, setIsUploading] = useState(false)
+    const [imageUrl, setImageUrl] = useState(null);
+    const [isUpdate, setIsUpdate] = useState(false);
+    
+    
 
     const imagePicker = async e => {
         try {
             
         const file = e.target.files[0];
+
         var metaData = {
             contentType: file.type
         }
@@ -35,13 +42,27 @@ const SignUp = () => {
         const storageRef =  await firebase.storage().ref()
 
         var uploadTask = storageRef
-        .child('images/' + file.name)
+        .child("images/" + v4())
         .put(resizedImage, metaData)
 
         uploadTask.on(
             firebase.storage.TaskEvent.STATE_CHANGED,
             snapshot => {
+                setIsUploading(true);
                 var progress = (snapshot.bytesTransferred/snapshot.totalBytes)*100;
+                
+                switch (snapshot.state) {
+                    case firebase.storage.TaskState.PAUSED:
+                        setIsUploading(false);
+                        console.log("Uploading Paused")
+                        break;
+                    case firebase.storage.TaskState.RUNNING:
+                        console.log("Upload in progress..");
+                        break;;
+                }
+                
+                
+                
                 if(progress === 100) {
                     alert("Success Uploading Image")
                 }
@@ -74,7 +95,7 @@ const SignUp = () => {
         
         .then( res => {
             console.log(res)
-            context.setUser({email: res.user.email, uid: res.user.uid})
+            context.setUser({email: res.user.email, uid: res.user.uid, image: imageUrl})
         })
         .catch(error => {
             alert(error)
@@ -130,7 +151,7 @@ const SignUp = () => {
     
 
     if(context.user?.uid) {
-        return <Redirect to="/"/>
+        return <Redirect to="/game-story"/>
     }
     return(
         <>
@@ -139,19 +160,21 @@ const SignUp = () => {
             </div>
             <div className="image-container">
                 <div className="void"/>
-                <Form className="photo">
-                    <FormGroup >
-                        <Label className="image-label" for="userImage"></Label>
-                        <Input 
+                <div className="photo">
+                    
+                        <label className="image-label" htmlFor="userImage">
+                            <img src={imageUrl} alt="Not Loaded" className="profu" />
+                        </label>
+                        <input 
                         className="image-input" 
                         id="userImage" 
                         name="image" 
                         multiple={false}
                         onChange={e => imagePicker(e)}
                         accept="image/*" 
-                        type="file"></Input>
-                    </FormGroup>
-                </Form>
+                        type="file"></input>
+                   
+                </div>
                 <div className="void"/>
             </div>
             <div className="container-box">

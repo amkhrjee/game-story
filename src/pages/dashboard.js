@@ -75,7 +75,7 @@ const dashboard = () => {
                             console.log("Uploading Paused");
                             break;
                         case firebase.storage.TaskState.RUNNING:
-                            console.log("Upload inn progress...")
+                            console.log("Upload in progress...")
                             break;
                     }
                     if(progress === 100) {
@@ -171,10 +171,12 @@ const dashboard = () => {
                     value={available}
                     onChange={e => setAvailable(e.target.value)}
                     id="available">
-                    <option>PC</option>
+                    <option className="options">PC</option>
+                    <option>PC + PS + Xbox</option>
                     <option>PlayStation</option>
                     <option>Xbox</option>
                     <option>PS + Xbox</option>
+                    <option>PS + PC</option>
                     <option>Nintendo</option>
                     </Input>
                     </Col>
@@ -197,7 +199,8 @@ const dashboard = () => {
                     className="form-input" 
                     value={release}
                     onChange={e=> setRelease(e.target.value)}
-                    type="date" 
+                    type="text"
+                    placeholder="29th Feb 2056" 
                     id="relDate"/>
                     </Col>
                 </FormGroup>
@@ -208,13 +211,8 @@ const dashboard = () => {
                     className="form-input" 
                     value={genre}
                     onChange={e => setGenre(e.target.value)}
-                    type="select" 
+                    type="text" 
                     id="genre">
-                        <option>Horror</option>
-                        <option>Aliens</option>
-                        <option>Space</option>
-                        <option>Adventure</option>
-                        <option>Historical</option>
                     </Input>
                     </Col>
                 </FormGroup>
@@ -232,11 +230,11 @@ const dashboard = () => {
                 <FormGroup>
                         <Label className="form-label" for="storyline">Storyline:</Label>
                         <Input 
-                        type="text" 
+                        type="textarea" 
                         className="story-input"
                         value={storyline}
                         onChange={e => setStoryline(e.target.value)} 
-                        placeholder="Don't Press Enter" id="storyline"/>
+                        placeholder="Only copy-paste from Wikipedia, lol" id="storyline"/>
                     </FormGroup>
                     <Button type="submit" className="button-box">
                         <p className="button-text">Submit</p>

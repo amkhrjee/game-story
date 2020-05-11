@@ -20,9 +20,14 @@ export const GameCardComp = ({game, gameKey}) => {
         history.push("/game-story/gameInfo");
     }
     return(
+       <>
         <div className="game-card">
+            <div className="card-container">
             <img onClick={() => viewSingleGame(game)} className="game-card-image" src={game.poster} alt="X" />
+            <div onClick={() => viewSingleGame(game)} className="overlay"><p className="game-card-text">{game.title}</p></div>
+            </div>
         </div>
+       </>
     )
 }
 

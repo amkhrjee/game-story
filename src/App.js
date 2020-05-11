@@ -40,7 +40,7 @@ firebase.initializeApp(firebaseConfig);
 
 const App = () => {
   const [user, setUser] = useState(null);
-
+  
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const getGames = async () => {
