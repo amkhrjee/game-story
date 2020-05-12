@@ -20,7 +20,8 @@ export default(state, action) => {
         case SET_SINGLE_GAME: 
         return {
             ...state,
-            game: action.payload
+            game: action.payload,
+            gameKey: action.key 
         }
         default:
             return state;

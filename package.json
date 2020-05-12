@@ -23,6 +23,7 @@
     "react-stripe-checkout": "^2.6.3",
     "reactstrap": "^8.4.1",
     "stripe": "^8.49.0",
+    "swup": "^2.0.9",
     "uuid": "^8.0.0"
   },
   "scripts": {

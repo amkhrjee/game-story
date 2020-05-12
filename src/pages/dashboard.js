@@ -27,6 +27,7 @@ const dashboard = () => {
     const [developer, setDeveloper] = useState("");
     const [storyline, setStoryline] = useState("");
     const [videoID, setVideoID] = useState("");
+    const [discussions, setDiscussions] = useState("");
     const [isUploading, setIsUploading] = useState(false);
     const [downloadUrl, setDownloadUrl] = useState(null);
     const [isUpdate, setIsUpdate] = useState(false);
@@ -110,6 +111,7 @@ const dashboard = () => {
                 release,
                 available,
                 genre,
+                discussions,
                 storyline,
                 poster: downloadUrl,
                 developer,
@@ -178,6 +180,7 @@ const dashboard = () => {
                     <option>PS + Xbox</option>
                     <option>PS + PC</option>
                     <option>Nintendo</option>
+                    <option>PC + PS + Xbox + Nintendo</option>
                     </Input>
                     </Col>
                 </FormGroup>

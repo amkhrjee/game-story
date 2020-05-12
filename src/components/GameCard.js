@@ -13,7 +13,8 @@ export const GameCardComp = ({game, gameKey}) => {
     const viewSingleGame = game => {
         dispatch({
             type: SET_SINGLE_GAME,
-            payload: game
+            payload: game,
+            key: gameKey
         })
 
         

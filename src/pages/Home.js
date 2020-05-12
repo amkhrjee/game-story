@@ -18,9 +18,11 @@ const Home = () => {
         <>
             <Container>
                 {games.length === 0 ? (
-                    <div>
-                        No Games Found in Database
-                    </div>
+                    <>
+                    <div className="ring">
+                        Loading 
+                    </div> 
+                    </>
                 ) : (
                     <>
                     <div className="latest-game">
