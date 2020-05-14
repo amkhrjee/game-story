@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/game-story/static/css/main.bc0e7446.chunk.css",
-    "main.js": "/game-story/static/js/main.59b27aa8.chunk.js",
-    "main.js.map": "/game-story/static/js/main.59b27aa8.chunk.js.map",
+    "main.css": "/game-story/static/css/main.8757fdee.chunk.css",
+    "main.js": "/game-story/static/js/main.89c96416.chunk.js",
+    "main.js.map": "/game-story/static/js/main.89c96416.chunk.js.map",
     "runtime-main.js": "/game-story/static/js/runtime-main.c7182350.js",
     "runtime-main.js.map": "/game-story/static/js/runtime-main.c7182350.js.map",
     "static/css/2.69121389.chunk.css": "/game-story/static/css/2.69121389.chunk.css",
-    "static/js/2.9b979f8a.chunk.js": "/game-story/static/js/2.9b979f8a.chunk.js",
-    "static/js/2.9b979f8a.chunk.js.map": "/game-story/static/js/2.9b979f8a.chunk.js.map",
+    "static/js/2.f6fde3c7.chunk.js": "/game-story/static/js/2.f6fde3c7.chunk.js",
+    "static/js/2.f6fde3c7.chunk.js.map": "/game-story/static/js/2.f6fde3c7.chunk.js.map",
     "index.html": "/game-story/index.html",
-    "precache-manifest.09e29157d6b8092e6e28098c62c22fe7.js": "/game-story/precache-manifest.09e29157d6b8092e6e28098c62c22fe7.js",
+    "precache-manifest.18a30b6b351c137a88f043b3ae245fa4.js": "/game-story/precache-manifest.18a30b6b351c137a88f043b3ae245fa4.js",
     "service-worker.js": "/game-story/service-worker.js",
     "static/css/2.69121389.chunk.css.map": "/game-story/static/css/2.69121389.chunk.css.map",
-    "static/css/main.bc0e7446.chunk.css.map": "/game-story/static/css/main.bc0e7446.chunk.css.map",
-    "static/js/2.9b979f8a.chunk.js.LICENSE.txt": "/game-story/static/js/2.9b979f8a.chunk.js.LICENSE.txt",
+    "static/css/main.8757fdee.chunk.css.map": "/game-story/static/css/main.8757fdee.chunk.css.map",
+    "static/js/2.f6fde3c7.chunk.js.LICENSE.txt": "/game-story/static/js/2.f6fde3c7.chunk.js.LICENSE.txt",
     "static/media/brands-and-logotypes.svg": "/game-story/static/media/brands-and-logotypes.cdb413ff.svg",
     "static/media/down-arrow.svg": "/game-story/static/media/down-arrow.c3fc7584.svg",
+    "static/media/reply.svg": "/game-story/static/media/reply.6016781c.svg",
     "static/media/symbol.svg": "/game-story/static/media/symbol.e02c1a30.svg",
-    "static/media/undraw_profile_pic_ic5t.svg": "/game-story/static/media/undraw_profile_pic_ic5t.6a3966fb.svg"
+    "static/media/undraw_profile_pic_ic5t.svg": "/game-story/static/media/undraw_profile_pic_ic5t.6a3966fb.svg",
+    "static/media/upvote.svg": "/game-story/static/media/upvote.17523c1a.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c7182350.js",
     "static/css/2.69121389.chunk.css",
-    "static/js/2.9b979f8a.chunk.js",
-    "static/css/main.bc0e7446.chunk.css",
-    "static/js/main.59b27aa8.chunk.js"
+    "static/js/2.f6fde3c7.chunk.js",
+    "static/css/main.8757fdee.chunk.css",
+    "static/js/main.89c96416.chunk.js"
   ]
 }
