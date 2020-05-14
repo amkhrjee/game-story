@@ -4,6 +4,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { FormGroup, Form, Input, Label, Button } from 'reactstrap';
 import firebase from 'firebase/app';
 import { v4 } from 'uuid';
+import Upvote from '../assets/upvote.svg'
+import Reply from '../assets/reply.svg'
+
 
 const GameInfo = () => {
 
@@ -53,7 +56,7 @@ const GameInfo = () => {
                         <p className="form-label">Genre : <span className="answer">{game?.genre}</span> </p>
                     </div>
                 </div>
-            </div>
+            </div> 
             <div className="main-box">
                 <p className="form-label">Storyline:</p>
                 <div className="story-out">
@@ -78,10 +81,22 @@ const GameInfo = () => {
                                 placeholder="Add your thoughts..."
                             />
                         </FormGroup>
-                        <Button type="submit" className="button-box">
+                        <Button type="submit" className="sub-box">
                             <p className="button-text">Submit</p>
                         </Button>
                     </Form>
+                    <div className="Upvote">
+                        <btn  className="upvote-btn">
+                            <img className="int-icon" src={Upvote} alt='Upvote'/>
+                        </btn>
+                        <span>56</span>
+                    </div>
+                    <div className="Reply">
+                        <img className="int-icon" src={Reply} alt='Reply'/>
+                         <btn className="reply-btn">
+                             Reply
+                        </btn>
+                    </div>
                 </div>
 
             </div>

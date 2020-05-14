@@ -163,7 +163,7 @@ const SignUp = () => {
                 <div className="photo">
                     
                         <label className="image-label" htmlFor="userImage">
-                            <img src={imageUrl} alt="Not Loaded" className="profu" />
+                            <img src={imageUrl} alt="" className="profu" />
                         </label>
                         <input 
                         className="image-input" 
@@ -178,7 +178,7 @@ const SignUp = () => {
                 <div className="void"/>
             </div>
             <div className="container-box">
-                <div className="empyt-space" />
+                {/* <div className="empyt-space" /> */}
                 <Form onSubmit={handleSubmit} className="signup-form">
                     <FormGroup>
                         <Label className="form-label" for="userEmail">Email:</Label>
