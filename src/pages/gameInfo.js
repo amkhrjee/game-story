@@ -52,7 +52,7 @@ const GameInfo = () => {
                     <div className="basic-form">
                         <p className="form-label">Available On : <span className="answer">{game?.available}</span> </p>
                         <p className="form-label">Developer : <span className="answer">{game?.developer}</span> </p>
-                        <p className="form-label">Released : <span className="answer">{game?.releasedate}</span> </p>
+                        <p className="form-label">Released : <span className="answer">{game?.release}</span> </p>
                         <p className="form-label">Genre : <span className="answer">{game?.genre}</span> </p>
                     </div>
                 </div>
@@ -85,7 +85,7 @@ const GameInfo = () => {
                             <p className="button-text">Submit</p>
                         </Button>
                     </Form>
-                    <div className="Upvote">
+                    {/* <div className="Upvote">
                         <btn  className="upvote-btn">
                             <img className="int-icon" src={Upvote} alt='Upvote'/>
                         </btn>
@@ -96,7 +96,7 @@ const GameInfo = () => {
                          <btn className="reply-btn">
                              Reply
                         </btn>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>

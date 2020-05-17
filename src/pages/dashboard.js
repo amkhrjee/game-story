@@ -36,7 +36,7 @@ const dashboard = () => {
         if (gameToUpdate) {
           setTitle(gameToUpdate.title);
           setAvailable(gameToUpdate.available);
-          setRelease(gameToUpdate.releasedate);
+          setRelease(gameToUpdate.release);
           setGenre(gameToUpdate.genre);
           setDeveloper(gameToUpdate.developer);
           setStoryline(gameToUpdate.storyline);

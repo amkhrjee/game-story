@@ -18,10 +18,10 @@ const Footer = () => {
                 </div>
                 <div className="col-sm">
                 <li className="footer-list">
-                        <ul className="footer-head">Contact</ul>
-                        <ul className="footer-item">+91 8240625004</ul>
-                        <ul className="footer-item">@gamestory</ul>
-                        <ul className="footer-item">info@gamestory.com</ul>
+                        <ul className="footer-head">Connect</ul>
+                        <ul className="footer-item">Mail</ul>
+                        <ul className="footer-item">Twitter</ul>
+                        <ul className="footer-item">Instagram</ul>
                     </li>
                 </div>
                  <div className="col-sm">

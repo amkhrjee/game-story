@@ -27,7 +27,7 @@ const NavBar = () => {
                             <NavLink onClick={() => {context.setUser(null)}} to="/game-story">Sign Out</NavLink>
                         </div>
                          <div className="navigation">
-                         <div className='container'>
+                         <div className='nav-container'>
                              <div className='row pr-5'>
                                  <div className="col-sm pr-0">
                                      <div >
@@ -48,12 +48,12 @@ const NavBar = () => {
                                          <div className="dummy mt-0 mb-0">
                                              <NavLink tag={Link} to="/game-story/dashboard" className="down-item">Dashboard</NavLink>
                                          </div>
-                                         <div className="dummy mt-0 mb-0">
+                                         {/* <div className="dummy mt-0 mb-0">
                                              <p className="down-item">Profile</p>
-                                         </div>
-                                         <div className="dummy mt-0 mb-0 pd-0">
+                                         </div> */}
+                                         {/* <div className="dummy mt-0 mb-0 pd-0">
                                              <p className="down-item">Donate</p>
-                                         </div>
+                                         </div> */}
                                  </div>
                                  </div>
                              </div>

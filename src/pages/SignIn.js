@@ -55,7 +55,7 @@ const SignIn = () => {
                             type="email" 
                             value={email}
                             onChange={e => setEmail(e.target.value)}
-                            placeholder="johndoe@mail.com"/>
+                            placeholder="youarenotshroud@mixer.com"/>
                         </FormGroup>
                         <FormGroup>
                             <Label className="form-label" for="password">Password:</Label>
@@ -65,7 +65,7 @@ const SignIn = () => {
                             value={password}
                             onChange={e => setPassword(e.target.value)}
                             id="password" 
-                            placeholder="donotuse123"/>
+                            placeholder="shroudOP69"/>
                         </FormGroup>
                     <div className="button-container">
                         <Button type="submit" className="button-box">

@@ -39,6 +39,10 @@ body::-webkit-scrollbar-track{
   cursor: pointer;
   margin-bottom: 1px;
 }
+
+.footer-item:hover{
+  color: #E43F5A
+}
 @media only screen and (max-width: 768px){
 
   .footer{
@@ -97,9 +101,9 @@ body::-webkit-scrollbar-track{
 }
 
 .so-profile{
-  transform: translate(200%);
+  /* transform: translate(200%); */
   display: flex;
- ;
+ 
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "so nav" ;
 }
@@ -128,6 +132,8 @@ body::-webkit-scrollbar-track{
   width: 16px;
 
 }
+
+
 .dummy{
   background-color: #1b1b2f;
   color: #ffffff;
@@ -154,6 +160,15 @@ body::-webkit-scrollbar-track{
   
 }
 
+@media only screen and (max-width: 768px){
+  /* .userReg{
+
+  }
+  .so{
+    
+  } */
+}
+
 .signup-page-title{
   font-family: 'Inter', 'Segoe UI';
   position: relative;
@@ -169,7 +184,6 @@ body::-webkit-scrollbar-track{
   background-color: #111725;
   padding:25px;
   border-radius: 25px;
-
 }
 .empyt-space{
   grid-area: space;
@@ -205,6 +219,7 @@ body::-webkit-scrollbar-track{
   border-radius: 20px;
   background-image: linear-gradient(to right, #2C4786 , #090F1F);
   border: 0px;
+  
   color: #ffffff;
 }
 .answer{
@@ -246,6 +261,7 @@ body::-webkit-scrollbar-track{
   height: 150px;
   background-image: linear-gradient(to bottom, #2C4786 , #090F1F) ;
   border:0px; 
+  margin-bottom: 2rem;
 }
 .image-input{
   
@@ -276,6 +292,7 @@ body::-webkit-scrollbar-track{
   padding-bottom: 1em;
 }
 #google{
+  margin-top: 1rem;
   margin: 2em;
   
 }
@@ -301,7 +318,7 @@ body::-webkit-scrollbar-track{
 }
 .title{
   grid-area: title;
-  max-width: 50%;
+  max-width: 90%;
 }
 .poster{
   grid-area: poster;
@@ -662,7 +679,7 @@ li a {
   font-weight: 900;
   font-size: 1.5rem;
   padding: 2rem;
-  padding-bottom: 0.1rem;
+  padding-bottom: 0.1rem; 
 }
 .sub-box{
   background-color: #30336B;
@@ -673,6 +690,7 @@ li a {
   font-weight: 600;
   grid-area: button;
   border: 0px;
+  
 }
 .int-icon{
   width: 1rem;
