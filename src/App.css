@@ -73,14 +73,15 @@ body::-webkit-scrollbar-track{
 }
 .navbar{
   position: relative;
+  overflow: hidden;
   left: 0;
   top: 0;
   width: 100%;
   background-color: #1b1b2f;
   color: white;
   z-index: 1;
-  opacity: 0.95;
-  margin-bottom: 25;
+  opacity: 0.97;
+  margin-bottom: 2rem;
   display: flex;
 }
 .logo{
@@ -111,6 +112,9 @@ body::-webkit-scrollbar-track{
   padding-left: 1em;
  
   
+}
+.anchor{
+  color: inherit;
 }
 
 .so-profile{

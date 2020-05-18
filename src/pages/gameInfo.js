@@ -78,7 +78,7 @@ const GameInfo = () => {
                                 value={comment}
                                 onChange={e => setComment(e.target.value)}
                                 type="textarea"
-                                placeholder="Add your thoughts..."
+                                placeholder="Doesn't work right now..."
                             />
                         </FormGroup>
                         <Button type="submit" className="sub-box">
