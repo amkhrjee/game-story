@@ -30,22 +30,32 @@ body::-webkit-scrollbar-track{
   font-family: 'Inter', 'Segoe UI';
   font-size: 30;
   font-weight: 700;
-  margin-bottom: 1px;
+  margin-bottom: -2rem;
 }
 
 .footer-item{
   font-family: 'Inter', 'Segoe UI';
   font-weight: 400;
   cursor: pointer;
-  margin-bottom: 1px;
+  margin-bottom: -2rem;
 }
 
 .footer-item:hover{
   color: #E43F5A
 }
+.list-container{
+  display: flex;
+  justify-content: space-around;
+}
+.list{
+  padding-right: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 @media only screen and (max-width: 768px){
 
-  .footer{
+  /* .footer{
     display: flex;
     justify-content: space-around;
     font-size: smaller;
@@ -56,7 +66,10 @@ body::-webkit-scrollbar-track{
     order: 1;
     flex-shrink: 4;
   }
- 
+  */
+  .list-container{
+    display: none;
+  }
 }
 .navbar{
   position: relative;
@@ -113,7 +126,7 @@ body::-webkit-scrollbar-track{
 }
 .so{
   grid-area: so;
-  
+  padding-right: 1rem;
   margin-left: 2em;
   
 }
@@ -159,14 +172,70 @@ body::-webkit-scrollbar-track{
   display: block;
   
 }
-
+.toggle-btn{
+  display: none;
+}
+.toggle-menu{
+  display: none;
+}
+.user-dashboard{
+  display: none;
+}  
 @media only screen and (max-width: 768px){
-  /* .userReg{
-
-  }
+  
+.user-dashboard{
+  display: block;
+}  
   .so{
+    display: none;
+  }
+  .navigation{
+    display: none;
+  }
+  .so-profile{
+    height: fit-content;
+    width: fit-content;
+  }
+  .btn-container{
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-top: -0.2rem;
+  }
+  .toggle-btn{
+    display: inline-block;
+    margin-top: auto;
+    padding: 0%;
     
-  } */
+    /* display: none; */
+  }
+  .toggle-icon{
+    max-height: 1.5rem;
+    max-width: 1.5em;
+    margin-left: 85%;
+    cursor: pointer;
+    position: relative;
+  }
+  .toggle-menu{
+    
+    border-radius: 12px;
+    /* display: flex; */
+    flex-direction: column;
+    z-index: 2;
+    min-width: 50vw;
+    min-height: 25vh;
+    background-color: #1b1b2f;
+    opacity: 0.95;
+    /* margin-top: 20%; */
+    /* margin-left: 90%; */
+    display: none;
+  }
+  .toggle-icon:hover .toggle-menu{
+   display: block; 
+    
+  }
+    
+
 }
 
 .signup-page-title{
@@ -502,13 +571,18 @@ li a {
 }
 
 @media only screen and (max-width: 768px){
-  ul{
+  .horizontal-list{
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-items: flex-start;
+    flex-direction: row;
+    flex-flow: row wrap;
+    /* flex-flow: column wrap; */
+    
   }
   
+  .game-card-image{
+    min-width: 100%;
+    min-height: 25rem;
+  }
   li {
     
     padding-right: 0em;
@@ -522,10 +596,10 @@ li a {
     align-self: flex-start;
   }
   .card-container{
-    transform: scale(0.6);
+    transform: scale(1);
     justify-content: space-around;
-    padding-right: 0em;
-
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
   }
   .game-card{
     margin: 0em;

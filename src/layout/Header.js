@@ -6,7 +6,7 @@ import { Link, NavLink } from 'react-router-dom';
 
 import firebase from 'firebase/app';
 import temp_profile from '../assets/undraw_profile_pic_ic5t.svg'
-
+import toggle from '../assets/layout.svg'
 
 
 const NavBar = () => {
@@ -22,7 +22,32 @@ const NavBar = () => {
             <div className="userReg">
                 {
                     context.user? (
+                        
                         <div className="so-profile">
+                            {/* <div className="btn-container">
+                                <div className="toggle-btn">
+                                    <img className="toggle-icon" src={toggle} />
+                                </div>
+                                <div className="toggle-menu">
+                                    <div className="profile-name">
+                                        <img className="user-image" src={context.user?.image} />
+                                        <p>{ context.user?.email ? context.user.email : '' }</p>
+                                    </div>
+                                    <div>
+                                        <NavLink tag={Link} to="/game-story/dashboard" className="down-item">Dashboard</NavLink>
+                                    </div>
+                                    <div className="sign-out">
+                                        <NavLink onClick={() => {context.setUser(null)}} to="/game-story">Sign Out</NavLink>
+                                    </div>
+                                    
+                                </div>
+                            </div> */}
+                                <div className="user-dashboard">
+                                        <NavLink tag={Link} to="/game-story/dashboard" className="down-item">Dashboard</NavLink>
+                                    </div>
+
+
+                        
                         <div className="so">
                             <NavLink onClick={() => {context.setUser(null)}} to="/game-story">Sign Out</NavLink>
                         </div>
@@ -31,7 +56,7 @@ const NavBar = () => {
                              <div className='row pr-5'>
                                  <div className="col-sm pr-0">
                                      <div >
-                                         <img className="profile-image" src={context.user?.image} alt="X"/>
+                                         <img className="profile-image" src={context.user?.image} />
                                      </div>  
                                  </div>
                                  <div className="col-sm pl-1 pr-1">
