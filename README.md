@@ -1,5 +1,5 @@
 ## What is this App?
-Made using ReactJs with Authentication and Realtime Database provided by Google's Firebase, this web app provides all sorts of information about games. The users can upload a game themselves by jut signing up or signing in. 
+Made using ReactJS with Authentication and Realtime Database provided by Google's Firebase, this web app provides all sorts of information about games. The users can upload a game themselves by jut signing up or signing in. 
 ## The App Link
 Here is the link to the web app:  [gamestory](https://aniruddh-mukherjee.github.io/game-story/)
 ## Related Blog
